@@ -23,11 +23,17 @@ import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProvi
 import defined from 'terriajs-cesium/Source/Core/defined';
 import render from './lib/Views/render';
 
+import HeatmapImageryCatalogItem from './lib/Models/HeatmapImageryCatalogItem';
+import createCatalogMemberFromType from 'terriajs/lib/Models/createCatalogMemberFromType';
+
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
 // (i.e. to reduce the size of your application if you don't actually use them all), feel free to copy a subset of
 // the code in the registerCatalogMembers function here instead.
 registerCatalogMembers();
 registerAnalytics();
+
+// Register custom heatmap catalog item
+createCatalogMemberFromType.register('heatmap-imagery', HeatmapImageryCatalogItem);
 
 terriaOptions.analytics = new GoogleAnalytics();
 
