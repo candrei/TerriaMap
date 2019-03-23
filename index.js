@@ -122,6 +122,21 @@ module.exports = terria.start({
         }
 
         render(terria, allBaseMaps, viewState);
+
+        // Hack to remove the unneeded elements
+        // TODO this shoould be done with a custom UI inside terriajs repo
+        setTimeout(() => {
+            let collection = document.getElementsByClassName('tjs-side-panel__header');
+            if (collection.length) {
+                collection[0].remove();
+            }
+
+            collection = document.getElementsByClassName('tjs-badge-bar__header');
+            if (collection.length) {
+                collection[0].remove();
+            }
+        }, 100);
+
     } catch (e) {
         console.error(e);
         console.error(e.stack);
