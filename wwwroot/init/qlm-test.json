@@ -1,0 +1,21 @@
+{
+    "homeCamera": {
+      "west": -2.692422866821289,
+      "south": 51.51958555204943,
+      "east": -2.674505710601806,
+      "north": 51.52823680925529
+    },
+    "catalog": [{
+      "type": "group",
+      "name": "QLM",
+      "description": "QLM sample data",
+      "items": [{
+          "type": "heatmap-imagery",
+          "name": "Concentration of methane",
+          "opacity": 1.0,
+          "isEnabled": true,
+          "isShown": true,
+          "zoomOnEnable": true
+      }]
+    }]
+  }
