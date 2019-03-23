@@ -23,11 +23,17 @@ import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProvi
 import defined from 'terriajs-cesium/Source/Core/defined';
 import render from './lib/Views/render';
 
+import HeatmapImageryCatalogItem from './lib/Models/HeatmapImageryCatalogItem';
+import createCatalogMemberFromType from 'terriajs/lib/Models/createCatalogMemberFromType';
+
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
 // (i.e. to reduce the size of your application if you don't actually use them all), feel free to copy a subset of
 // the code in the registerCatalogMembers function here instead.
 registerCatalogMembers();
 registerAnalytics();
+
+// Register custom heatmap catalog item
+createCatalogMemberFromType.register('heatmap-imagery', HeatmapImageryCatalogItem);
 
 terriaOptions.analytics = new GoogleAnalytics();
 
@@ -116,6 +122,21 @@ module.exports = terria.start({
         }
 
         render(terria, allBaseMaps, viewState);
+
+        // Hack to remove the unneeded elements
+        // TODO this shoould be done with a custom UI inside terriajs repo
+        setTimeout(() => {
+            let collection = document.getElementsByClassName('tjs-side-panel__header');
+            if (collection.length) {
+                collection[0].remove();
+            }
+
+            collection = document.getElementsByClassName('tjs-badge-bar__header');
+            if (collection.length) {
+                collection[0].remove();
+            }
+        }, 100);
+
     } catch (e) {
         console.error(e);
         console.error(e.stack);
