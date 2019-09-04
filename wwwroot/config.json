@@ -39,7 +39,7 @@
             link: "http://www.example.com"
         },*/
         // This is used in various text messages. You should also set <title> in index.html
-        appName: "GIS web viewer",
+        appName: "RGB & Thermal (sample)",
 
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
         brandBarElements: [
