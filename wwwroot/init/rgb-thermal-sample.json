@@ -1,0 +1,33 @@
+{
+    "baseMapName": "Bing Maps Aerial with Labels",
+    "initialCamera": {
+      "west": -79.9300,
+      "south": 40.1962,
+      "east": -79.9200,
+      "north": 40.1995
+    },
+    "catalog": [{
+      "type": "group",
+      "name": "Sample",
+      "description": "Sample data",
+      "items": [{
+        "type": "ion-imagery",
+        "name": "RGB ortho sample",
+        "isEnabled": true,
+        "isShown": true,
+        "zoomOnEnable": true,
+        "opacity": 1.0,
+        "ionAssetId": 41007,
+        "ionAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4MDFiY2QwNS0yYjc4LTQ3MTYtYmViOC04ZDAxMjU4Y2M4NzQiLCJpZCI6NzA1Niwic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTU0ODE0OTIxN30.GdJhpvvgga5iqnUuTvie2kBc0gVoW_zpwcc5mfk8Bwk"
+      }, {
+        "type": "ion-imagery",
+        "name": "Thermal radiometric sample",
+        "isEnabled": true,
+        "isShown": true,
+        "zoomOnEnable": true,
+        "opacity": 0.1,
+        "ionAssetId": 41008,
+        "ionAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4MDFiY2QwNS0yYjc4LTQ3MTYtYmViOC04ZDAxMjU4Y2M4NzQiLCJpZCI6NzA1Niwic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTU0ODE0OTIxN30.GdJhpvvgga5iqnUuTvie2kBc0gVoW_zpwcc5mfk8Bwk"
+      }]
+    }]
+  }

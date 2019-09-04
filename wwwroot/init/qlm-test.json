@@ -1,6 +1,6 @@
 {
     "baseMapName": "Bing Maps Aerial with Labels",
-    "homeCamera": {
+    "initialCamera": {
       "west": -2.69169,
       "south": 51.52568,
       "east": -2.68353,
