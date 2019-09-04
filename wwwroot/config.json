@@ -66,6 +66,9 @@
         "disableSplitter": true,
         "useCesiumIonTerrain": false,
         "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4MDFiY2QwNS0yYjc4LTQ3MTYtYmViOC04ZDAxMjU4Y2M4NzQiLCJpZCI6NzA1Niwic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTU0ODE0OTIxN30.GdJhpvvgga5iqnUuTvie2kBc0gVoW_zpwcc5mfk8Bwk",
+
+        // To override TerriaJS's region mapping file with a local one.
+        // regionMappingDefinitionsUrl: "data/regionMapping.json"
     }
 }
 
